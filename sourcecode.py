@@ -1,3 +1,6 @@
+import turtle
+
+
 print("Hi, my name is Vico and I'll be your Virtual Coffee maker for the day. I hope you day has been pleasent so far? (Yes/No)")
 response = input()
 
@@ -14,6 +17,12 @@ print("\n")
 print("Pick you poison: ".center(40, '-'))
 printing_menu()
 deciding_coffee()
+
+def creating_turtle():
+	marco = turtle.Turtle()
+	marco.shape("turtle")
+	marco.speed(5)
+
 
 def printing_menu():
 	print("1. Goth Latte")
