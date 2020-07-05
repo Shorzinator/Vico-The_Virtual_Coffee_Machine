@@ -3,6 +3,11 @@
 
 import turtle
 
+def creating_turtle():
+	marco = turtle.Turtle()
+	marco.shape("turtle")
+	marco.speed(5)
+
 def draw_circle(turtle, color, size, x, y):
   turtle.penup()
   turtle.color(color)
