@@ -7,13 +7,16 @@ creating_turtle()
 marco.penup()
 marco.goto(0, 0)
 marco.color("black")
-marco.write("Welcome to the 'Testudines coffee'. My name is Vico and I'll be your Virtual Coffee maker for the day. I hope you day has been pleasent so far? (Yes/No)")
+marco.write("Welcome to the 'Testudines Coffee'. My name is Vico and I'll be your Virtual Coffee Maker for the day. I hope your day has been pleasent so far? (Yes/No)")
 
 def response():
-	response_list = input().split()
-    if any(response_list) == 'Yes' or any(response_list) == 'yes' or any(response_list) == 'yeah' or any(response_list) == 'Yeah':
+	initial_response = input()
+    if initial_response == 'Yes':
         print("So good to hear that!")
-    else:
+	elif initial_response == 'Hell, Yeah!':
+		print("OMG! you sound like someone who just won a lottery! Would you be up for some recommendations to keep that energy up?")
+		recomm_response = input()
+	else:
         print("I hope my coffee will make you feel better")
 
 
@@ -23,6 +26,12 @@ print("\n")
 
 printing_menu()
 
+def recommendations():
+	switcher_1 = {
+		1: ""
+	}
+
+
 def deciding_coffee():
 	switcher = {
 		1: "Goth Latte",
@@ -31,7 +40,7 @@ def deciding_coffee():
 		4: "Ethiopia, Yirgacheffe",
 		5: "Kenya",
 		6: "Colombia",
-		7: "Indinesia, Mandheling",
+		7: "Indonesia, Mandheling",
 		8: "Guinnesepresso",
 		9: "Gordan GF's Temptation",
 		10: "Bailey's Misu Misu",
