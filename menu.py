@@ -1,4 +1,5 @@
 # This is a module for printing the menu
+# The menu has been copied from a cafe's menu named 'Mellower Coffee'
 
 import turtle
 from shapes import *
