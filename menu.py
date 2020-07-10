@@ -1,5 +1,5 @@
 # This is a module for printing the menu
-# The menu has been copied from a cafe's menu named 'Mellower Coffee'
+# The menu has been derived from a cafe's menu named 'Mellower Coffee'
 
 import turtle
 from shapes import *
@@ -70,3 +70,13 @@ def printing_menu():
 	print("\n")
 	marco.write("14. FLAT WHITE", True, align = "right", font = "10pt")
     marco.write("30ml espresso, 65-degree steamed milk, 0.3cm milk foam", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("15. Potence Affagato", True, align = "right", font = "10pt")
+    marco.write("1 or 2 shots of Espresso along with a ball of energy in the form of ice cream", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("16. An Affair with Death", True, align = "right", font = "10pt")
+    marco.write("A chocolate espresso that'll bring you closer to the final destination with its heavenly chocolate blend", True, align = "right", font = "10pt")
+
+	
