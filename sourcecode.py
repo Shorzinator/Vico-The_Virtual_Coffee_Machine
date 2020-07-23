@@ -27,7 +27,8 @@ response(initial_response)
 
 def response():
     """
-
+	Input: Variable "initial_response" used to determine further course of action.
+	Output: Two different types of menu's depending on the variable "initial_response".
     """
     if initial_response == 'Yes':
         print("So good to hear that!")
@@ -50,6 +51,10 @@ def response():
 
 
 def recommendations():
+	"""
+	Input: When 'recommendation_response = "R"', Recommendations() function is invoked.
+	Output: Sources the recommended_menu() from the file menu.py
+	"""
     print("Printing Recommended Menu", end='')
     time.sleep(0.5)
     print(".", end='')
