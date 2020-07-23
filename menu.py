@@ -4,7 +4,7 @@
 import turtle
 from shapes import *
 
-def printing_menu():
+def printing_main_menu():
 	creating_turtle()
 
 	draw_circle(marco, "green", 50, 25, 0)
@@ -79,4 +79,26 @@ def printing_menu():
 	marco.write("16. An Affair with Death", True, align = "right", font = "10pt")
     marco.write("A chocolate espresso that'll bring you closer to the final destination with its heavenly chocolate blend", True, align = "right", font = "10pt")
 
-	
+	print("\n")
+	marco.write("17. Dope-Dope Doppio", True, align = "right", font = "10pt")
+    marco.write("A double shot espresso, extracted using ta double coffee filter in the portafilter, for the two workaholics who don't care about their sleep.", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("18. Bull Irish", True, align = "right", font = "10pt")
+    marco.write("A cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. Why should only pub goers have fun?", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("19. Evil LATTE", True, align = "right", font = "10pt")
+    marco.write("An espresso shot, 79 degree steamed milk, and an added delight of Bloody Mary.", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("20. MACHO Macchiato", True, align = "right", font = "10pt")
+    marco.write("The shades of brown we present in our Macchiato would leave your oesophagus stained and spotted!", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("21. Complex Lungo", True, align = "right", font = "10pt")
+    marco.write("20% Coffee, 80% water - pocket friendly and tastes deadly!", True, align = "right", font = "10pt")
+
+	print("\n")
+	marco.write("22. Bull's Eye", True, align = "right", font = "10pt")
+    marco.write("A shot of espresso in milk, blended perfectly in proportion to calm your mind, body and soul.", True, align = "right", font = "10pt")
