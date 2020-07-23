@@ -1,4 +1,5 @@
-> General text display 
+> General text display
+> Ask about mood and accordingly show menu 
 > checks if any coffee is being made at that time > asks for order - type, number of people 
 > according to type, calculate quantity of sugar, coffee beans, milk and, water needed 
 > star the coffee making process >Check if you have all the necessary ingredients in the right amount present to make any particular order 
