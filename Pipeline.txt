@@ -1,8 +1,28 @@
-> General text display
-> Ask about mood and accordingly show menu 
-> checks if any coffee is being made at that time > asks for order - type, number of people 
-> according to type, calculate quantity of sugar, coffee beans, milk and, water needed 
-> star the coffee making process >Check if you have all the necessary ingredients in the right amount present to make any particular order 
-> display necessary message(s) 
-> ask for payment of their coffee and if they need anything else 
-> Thank you and do visit again!
+1. Display text for the welcome of the customer
+        a. Talk about mood.
+        b. Recommend according to mood.
+        c. Move on.
+
+2. Use probability function to check if a coffee is in the process of being made. If yes, wait for 3 secs, then check again and keep \
+   on displaying some new message after each 3 sec interval.
+        a. After the first 3 sec interval, display menu according to the mood that has been verified before.
+        b. The probability of being free or not free would be 70/ 30.
+        c. Import a csv file of the menu that is to be recommended, then ask if he wants the full menu, if answer == yes, display full
+           menu as well (that is to be imported too). Then ask if any other coffee is also needed, maybe for someone they came with.
+        d. After the coffee has been chosen, ask for some food item - display food item menu, and also ask about quantity.
+        e. Anything extra - display options for extras in the coffee (milk, sugar, espresso shot, etc.)
+
+*About the menu -
+        a. The menu should have the following columns-
+                > S. no.
+                > Name of coffee
+                > Origin of Coffee
+                > Time to make
+                > Cost
+        b. See if some graphic can be added.
+
+3. Delay of about 30 secs, Then display that the coffee is prepared, read the cost corresponding to the items from the menu.
+        a. Ask for the payment.
+        b. Ask if they have change, if not offer to give them against their large bill.
+
+4. Final Greeting. Next, order (if, any?).
