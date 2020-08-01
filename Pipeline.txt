@@ -18,7 +18,7 @@
                 > Name of coffee
                 > Origin of Coffee
                 > Time to make
-                > Cost
+                > Price
         b. See if some graphic can be added.
 
 3. Delay of about 30 secs, Then display that the coffee is prepared, read the cost corresponding to the items from the menu.
