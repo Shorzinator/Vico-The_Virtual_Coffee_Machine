@@ -1,1 +1,1 @@
-Hi, my name is Vico, your Virtual Coffee Machine. It's my pleasure to serve coffee for you.
+This is a pet project of mine. In this COVID-19 pandemic, I thought about small businesses (in this case, cafes) and how they can create automated order taking in order to minimize the customer and employee interaction.
