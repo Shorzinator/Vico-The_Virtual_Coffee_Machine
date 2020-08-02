@@ -1,29 +1,25 @@
 import time
-from turtle import *
-from shapes import *
-from menu import *
+import ipywidgets as widgets
+from ipywidgets import interact, interactive, fixed
+import csv
+import pandas as pd
 
 
-def creating_turtle():
-    bro = turtle.Turtle()
-    bro.shape("turtle")
-    bro.speed(5)
-    return bro
+full_menu = pd.read_csv(r'C:\Users\Shourya\Documents\My Projects\Virtual Coffee Maker\full_menu.csv')
+recommended_menu = pd.read_csv(r'C:\Users\Shourya\Documents\My Projects\Virtual Coffee Maker\energetic_menu.csv')
 
+for i in range(10):
+    print(" 🎉", end="")
+    time.sleep(0.2)
 
-marco = creating_turtle()
+print("     Welcome to the 'TurCoffee'. My name is Vico and I'll be your Virtual Coffee Maker for the day. ")
+print("I hope your day has been pleasant so far? (Hell, Yeah! / Yes / No)       ", end="")
 
-marco.penup()
-marco.goto(0, 0)
-marco.color("black")
-marco.write(
-    "Welcome to the 'TurCoffee'. My name is Vico and I'll be your Virtual Coffee Maker for the day. I hope your day "
-    "has been pleasant so far? (Hell, Yeah! / Yes / No)")
+print("🎉 🎉 🎉 🎉 🎉 🎉 🎉 🎉 🎉 🎉")
 
 initial_response = input()
 
 response(initial_response)
-
 
 def response():
     """
@@ -37,15 +33,34 @@ def response():
               "that energy up? Or should I just display the usual menu? (R: Recommendations, U: Usual Menu)")
         recommendation_response = input()
         if recommendation_response == "R":
+
+            print("Printing Recommended Menu", end='')
+
+            for i in range(5):
+                print(".", end='')
+                time.sleep(0.3)
+            print(".")
+
+            print(recommended_menu)
+
             print("\n")
-            print("So, what can I make for you today, you can choose from the menu below.")
+            print("So, what can I make for you today, you can choose from the menu displayed.")
             print("\n")
-            recommendations()
+
         else:
+            print("Printing Full Menu", end='')
+
+            for i in range(5):
+                print(".", end='')
+                time.sleep(0.3)
+            print(".")
+
+            print(full_menu)
+
             print("\n")
-            print("So, what can I make for you today, you can choose from the menu below.")
+            print("So, what can I make for you today, you can choose from the menu displayed.")
             print("\n")
-            printing_main_menu()
+
     else:
         print("I hope my coffee will make you feel better")
 
@@ -55,19 +70,6 @@ def recommendations():
 	Input: When 'recommendation_response = "R"', Recommendations() function is invoked.
 	Output: Sources the recommended_menu() from the file menu.py
 	"""
-    print("Printing Recommended Menu", end='')
-    time.sleep(0.5)
-    print(".", end='')
-    time.sleep(0.5)
-    print(".", end='')
-    time.sleep(0.5)
-    print(".", end='')
-    time.sleep(0.5)
-    print(".", end='')
-    time.sleep(0.5)
-    print(".", end='')
-
-    recommended_menu()
 
     print("Enter the number prefixed with your choice of coffee: ")
     choice_of_coffee = int(input())
@@ -109,6 +111,3 @@ def deciding_coffee():
         21: "Complex Lungo",
         22: "Bull's Eye"
     }
-
-
-turtle.done()
