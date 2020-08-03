@@ -8,14 +8,14 @@ import pandas as pd
 full_menu = pd.read_csv(r'C:\Users\Shourya\Documents\My Projects\Virtual Coffee Maker\full_menu.csv')
 recommended_menu = pd.read_csv(r'C:\Users\Shourya\Documents\My Projects\Virtual Coffee Maker\energetic_menu.csv')
 
-for i in range(10):
+for i in range(3):
     print(" 🎉", end="")
-    time.sleep(0.2)
+    time.sleep(0.7)
 
 print("     Welcome to the 'TurCoffee'. My name is Vico and I'll be your Virtual Coffee Maker for the day. ")
 print("I hope your day has been pleasant so far? (Hell, Yeah! / Yes / No)       ", end="")
 
-print("🎉 🎉 🎉 🎉 🎉 🎉 🎉 🎉 🎉 🎉")
+print("🎉 🎉 🎉 ")
 
 initial_response = input()
 
