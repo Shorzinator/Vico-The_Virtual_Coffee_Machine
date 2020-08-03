@@ -19,9 +19,7 @@ print("🎉 🎉 🎉 ")
 
 initial_response = input()
 
-response(initial_response)
-
-def response():
+def response(initial_response = input()):
     """
 	Input: Variable "initial_response" used to determine further course of action.
 	Output: Two different types of menu's depending on the variable "initial_response".
